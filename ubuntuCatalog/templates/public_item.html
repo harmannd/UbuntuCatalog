@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+    <div class="main">
+        <div class="main-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>{{ item.name }}</h2>
+                </div>
+            </div>
+
+            {% if item.image_url == None %}
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="item_description">{{ item.description }}</p>
+                    </div>
+                </div>
+            {% else %}
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img class="item_pic" src="{{ item.image_url }}">
+                    </div>
+                    <div class="col-sm-9">
+                        <p class="item_description">{{ item.description }}</p>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,218 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+    color: #d63104;
+    font-family: "zocial", sans-serif;
+    text-shadow: 3px 3px 3px #aaa;
+    width: 2em;
+}
+
+a:hover [class*="zocial-"]:before {
+    color: #9b2303;
+}
+
+body {
+    background-color: #dbd8d4;
+}
+
+footer {
+    max-width: 1000px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*
+* Nav bar
+*/
+.navbar {
+    background-color: #170c3a;
+    margin-bottom: 0;
+}
+
+.title_button {
+    padding-left: 0;
+}
+
+.title_button a {
+    color: white;
+}
+
+.title_button a h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3em;
+}
+
+.title_button a:hover {
+    text-decoration: none !important;
+}
+
+.log_button {
+    float: right;
+    margin-top: 10px;
+    background-color: #d63104;
+    color: white;
+}
+
+.log_button:hover {
+    background-color: #9b2303;
+    text-decoration: none !important;
+    color: black;
+}
+
+.log_button p {
+    margin: 10px 10px 10px 10px;
+}
+
+
+/*
+* Main content
+*/
+.content, .main {
+    max-width: 1000px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main {
+    background-color: white;
+}
+
+.main-section {
+    padding-left: 15px;
+}
+
+h2 {
+    color: darkblue;
+    margin-bottom:
+}
+
+h3 {
+    color: #d63104;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 13px;
+}
+
+.link a:hover {
+    text-decoration: none !important;
+}
+
+.link a h3:hover {
+    color: black;
+}
+
+#new_item {
+    margin-top: 15px;
+}
+
+.options input {
+    border-width: 0;
+    height: 28px;
+}
+
+.button h3, .options input {
+    background-color: #d63104;
+    color: white;
+    padding: 5px 5px 5px 5px;
+}
+
+.button h3:hover, .options input:hover {
+    color: black;
+    background-color: #9b2303;
+}
+
+.options {
+    max-width: 120px;
+}
+
+.add_button h3 {
+    max-width: 70px;
+}
+
+.edit_button h3 {
+    max-width: 70px;
+}
+
+.delete_button h3 {
+    max-width: 85px;
+}
+
+.cancel h3 {
+    max-width: 55px;
+}
+
+.label {
+    width: 130px;
+}
+
+.item_input {
+    margin-bottom: 10px;
+}
+
+.item_input div input {
+    width: 95%;
+}
+
+#delete_text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.error {
+    color: red;
+}
+
+.flash {
+    color: black;
+}
+
+.item_pic {
+    width: 100%;
+}
+
+.item_description {
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.copy {
+    max-width: 200px;
+}
+
+#git_link {
+    padding-right: 10px;
+}
+
+#fb_button {
+    border: none;
+}
+
+.g_button {
+    width: 150px;
+}
+
+/*
+* Media
+*/
+@media all and (min-width: 810px) and (max-width: 900px) {
+    #log {
+        padding-right: 15px;
+    }
+}
+
+@media all and (min-width: 1018px) {
+    #log {
+        padding-right: 0;
+    }
+}
+
+@media all and (max-width: 1018px) {
+    .title_button {
+        padding-left: 15px;
+    }
+}

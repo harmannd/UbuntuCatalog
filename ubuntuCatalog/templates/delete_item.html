@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+    <div class="main">
+        <div class="main-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Delete Item</h2>
+                </div>
+            </div>
+
+            <form action="{{ url_for('deleteItem', category_name=category_name, item_name=item.name) }}" method="post">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="delete_text">Are you sure you want to delete {{ item.name }}?</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="options item_input col-xs-6">
+                        <input type="submit" name="submit" value="Delete">
+                    </div>
+                    <div class="link col-xs-6">
+                        <a class="cancel button" href="{{ url_for('showCatalog') }}"><h3>Cancel</h3></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
