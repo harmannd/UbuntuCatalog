@@ -11,7 +11,21 @@
    * sudo apt-get install git
    * sudo apt-get update
    * sudo apt-get upgrade
+   * sudo apt install unattended-upgrades
+   * sudo -H unattended-upgrade -d
    
+### Third-party Tutorials/References
+   * DigitalOcean 
+      * https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+      * https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps
+   * Flask Docs
+      * http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/
+   * SQLAlchemy Docs
+      * http://docs.sqlalchemy.org/en/latest/core/engines.html
+   * PostgreSQL Docs
+      * https://www.postgresql.org/docs/8.0/static/sql-createuser.html
+   * Udacity Forums 
+   * StackOverflow
 
 ### Amazon Lightsail setup
    * 52.15.112.148 public IP
