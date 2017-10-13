@@ -1,4 +1,4 @@
-# ubuntuCatalog 18.216.4.161:2200 http://ec2-18-216-4-161.us-east-2.compute.amazonaws.com
+# ubuntuCatalog 18.216.4.161:2200 http://18.216.4.161/
 
 ### Software
    * sudo apt-get install apache2
