@@ -1,4 +1,4 @@
-# ubuntuCatalog 52.15.112.148:2200 http://52.15.112.148
+# ubuntuCatalog 18.216.4.161:2200 http://ec2-18-216-4-161.us-east-2.compute.amazonaws.com
 
 ### Software
    * sudo apt-get install apache2
@@ -28,7 +28,7 @@
    * StackOverflow
 
 ### Amazon Lightsail setup
-   * 52.15.112.148 public IP
+   * 18.216.4.161 public IP
    * Ports open: 80, 123, 2200
    
 ### Grader sudo 
@@ -38,12 +38,12 @@
    
 ### Server access
    * ubuntu login
-      * ssh ubuntu@52.15.112.148 -p 2200 -i ~/.ssh/LightsailKey.pem
+      * ssh ubuntu@18.216.4.161 -p 2200 -i ~/.ssh/LightsailKey.pem
       * public key in ubuntu/.ssh/authorized_keys
       * chmod 700 .ssh
       * chmod 644 .ssh/authorized_keys
    * grader login
-      * ssh grader@52.15.112.148 -p 2200 -i ~/.ssh/ubuntuserver
+      * ssh grader@18.216.4.161 -p 2200 -i ~/.ssh/ubuntuserver
       * public key in grader/.ssh/authorized_keys
       * chmod 700 .ssh
       * chmod 644 .ssh/authorized_keys
@@ -66,7 +66,7 @@
 ### Apache
    * /etc/apache2/sites-enabled/ubuntuCatalog.conf
       * <VirtualHost *:80>
-          ServerName 52.15.112.148
+          ServerName 18.216.4.161
           WSGIScriptAlias / /var/www/ubuntuCatalog/ubuntuCatalog.wsgi
           <Directory /var/www/ubuntuCatalog/>
                   Order allow,deny
