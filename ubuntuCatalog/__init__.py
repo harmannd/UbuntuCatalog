@@ -506,7 +506,6 @@ def fbconnect():
 
         return response
     access_token = request.data
-    print "access token received %s " % access_token
 
     # Exchange client token for long-lived server-side token with GET.
     app_path = '/var/www/ubuntuCatalog/ubuntuCatalog/fb_client_secrets.json'

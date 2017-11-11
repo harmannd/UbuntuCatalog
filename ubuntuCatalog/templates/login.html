@@ -78,11 +78,7 @@
         version    : 'v2.9'
     });
     FB.AppEvents.logPageView();
-    FB.Event.subscribe('auth.login', function(response) {
-        access_token = response.authResponse.accessToken;
-    });
     };
-
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) {
@@ -96,6 +92,11 @@
     function sendTokenToServer() {
         console.log('Welcome!  Fetching your information.... ');
         FB.login(function(response) {
+            FB.getLoginStatus(function(response) {
+                if (response.status === 'connected') {
+                    access_token = response.authResponse.accessToken;
+                }
+            });
             FB.api('/me', function(response) {
                 console.log('Successful login for: ' + response.name);
                 $.ajax({
