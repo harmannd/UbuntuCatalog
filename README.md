@@ -1,4 +1,4 @@
-# ubuntuCatalog 18.216.4.161:2200 http://18.216.4.161/
+# ubuntuCatalog 50.17.79.37:2200 http://catalogapponline.com/
 
 ### Software
    * sudo apt-get install apache2
@@ -27,8 +27,8 @@
    * Udacity Forums 
    * StackOverflow
 
-### Amazon Lightsail setup
-   * 18.216.4.161 public IP
+### Amazon setup
+   * 50.17.79.37 public static IP 
    * Ports open: 80, 123, 2200
    
 ### Grader sudo 
@@ -38,12 +38,12 @@
    
 ### Server access
    * ubuntu login
-      * ssh ubuntu@18.216.4.161 -p 2200 -i ~/.ssh/LightsailKey.pem
+      * ssh ubuntu@50.17.79.37 -p 2200 -i ~/.ssh/LightsailKey.pem
       * public key in ubuntu/.ssh/authorized_keys
       * chmod 700 .ssh
       * chmod 644 .ssh/authorized_keys
    * grader login
-      * ssh grader@18.216.4.161 -p 2200 -i ~/.ssh/ubuntuserver
+      * ssh grader@50.17.79.37 -p 2200 -i ~/.ssh/ubuntuserver
       * public key in grader/.ssh/authorized_keys
       * chmod 700 .ssh
       * chmod 644 .ssh/authorized_keys
@@ -66,7 +66,7 @@
 ### Apache
    * /etc/apache2/sites-enabled/ubuntuCatalog.conf
       * <VirtualHost *:80>
-          ServerName 18.216.4.161
+          ServerName 50.17.79.37
           WSGIScriptAlias / /var/www/ubuntuCatalog/ubuntuCatalog.wsgi
           <Directory /var/www/ubuntuCatalog/>
                   Order allow,deny
