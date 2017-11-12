@@ -5,7 +5,6 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-
 class User(Base):
     """Database model for catalog users.
     Attributes:

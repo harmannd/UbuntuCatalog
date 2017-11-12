@@ -9,61 +9,34 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
 # User
-user1 = User(
-    name="John Smith",
-    email="email@place.com",
+user = User(
+    name="Derek Harmann",
+    email="derekhar2468@gmail.com",
     picture="http://www.diaglobal.org/_Images/member/Generic_Image_Missing-Profile.jpg"
 )
-session.add(user1)
-session.commit()
+session.add(user)
 
-# Category
-category1 = Category(name="Snowboarding")
-session.add(category1)
-session.commit()
+# Categories
+categories = ["Snowboarding", "Soccer", "Basketball", "Baseball", "Rock Climbing", "Frisbee"]
+for category in categories:
+    session.add(Category(name=category))
 
 # Items
-item1 = Item(
-    name="Helmet",
-    description="Protective item for your head.",
-    category_id=1,
-    user_id=1
-)
-session.add(item1)
-session.commit()
+items = [
+    Item(
+        name="Helmet",
+        description="Protective item for your head.",
+        category_id=1,
+        user_id=1
+    ),
+    Item(
+        name="Snowpants",
+        description="Warm leg apparel.",
+        category_id=1,
+        user_id=1
+    )
+]
+for item in items:
+    session.add(item)
 
-item2 = Item(
-    name="Snowpants",
-    description="Warm pants to keep you dry.",
-    category=category1,
-    user=user1
-)
-session.add(item2)
 session.commit()
-
-# Category
-category1 = Category(name="Soccer")
-session.add(category1)
-session.commit()
-
-# Category
-category1 = Category(name="Basketball")
-session.add(category1)
-session.commit()
-
-# Category
-category1 = Category(name="Baseball")
-session.add(category1)
-session.commit()
-
-# Category
-category1 = Category(name="Rock Climbing")
-session.add(category1)
-session.commit()
-
-# Category
-category1 = Category(name="Frisbee")
-session.add(category1)
-session.commit()
-
-print "Added to database!"
