@@ -34,6 +34,36 @@ items = [
         description="Warm leg apparel.",
         category_id=1,
         user_id=1
+    ),
+    Item(
+        name="Soccer Ball",
+        description="Text goes here",
+        category_id=2,
+        user_id=1
+    ),
+    Item(
+        name="Basketball",
+        description="Text goes here",
+        category_id=3,
+        user_id=1
+    ),
+    Item(
+        name="Baseball",
+        description="Text goes here",
+        category_id=4,
+        user_id=1
+    ),
+    Item(
+        name="Climbing Rope",
+        description="Text goes here",
+        category_id=5,
+        user_id=1
+    ),
+    Item(
+        name="Frisbee",
+        description="Text goes here",
+        category_id=6,
+        user_id=1
     )
 ]
 for item in items:
